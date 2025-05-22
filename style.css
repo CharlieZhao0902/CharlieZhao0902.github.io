@@ -1,67 +1,118 @@
-body{
-    background-color: rgb(0, 0, 0);
-    color:grey;
-    font-family:arial;
-    font-size:1.2rem;
-    line-height: 1.3rem;
+body {
+  margin: 0;
+  font-family: 'Crimson Text', serif;
+  background-color: #f9f6f1;
+  color: #2b2b2b;
+  overflow-x: hidden;
+  position: relative;
 }
 
-div.largetext{
-    font-size:3.5rem;
-    line-height:3.5rem;
-    font-family: "baskerville-bt", sans-serif;
-font-weight: 700;
-font-style: italic;
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 2rem;
+  color: #4a3f35;
 }
 
-div.mediumtext{
-    font-size:1rem;
-    line-height:1rem;
-    margin-bottom: 1rem;
+h2 {
+  text-align: center;
+  font-weight: 400;
+  color: #6c5e4d;
+  margin-bottom: 2rem;
 }
 
-div.smalltext{
-    font-size: 0.5rem;
-    line-height: 0.5rem;
-
+.decor-line {
+  width: 80px;
+  height: 4px;
+  background: #c9b8a0;
+  margin: 0 auto 3rem auto;
+  border-radius: 2px;
 }
 
-div.extrasmalltext{
-    font-size: 0.2rem;
-    line-height: 0.2rem;
-    
+.content {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem;
+  position: relative;
+  z-index: 2;
 }
 
-div.mt{
-    margin-top: 5rem;
+p {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1.5s forwards;
+  line-height: 1.8;
+  margin: 2rem 0;
+  font-size: 1.15rem;
 }
 
-div.text-cyan{
-    color:cyan;
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-div.container{
-    display:flex;
-    flex-wrap:wrap;
-
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  top: 0;
+  left: 0;
 }
 
-div.swatch{
-    width:20rem;
-    height:20rem;
-    border-radius:0.6rem;
-    background-color: grey;
-    margin-right:3rem;
+.decorative-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  opacity: 0.2;
 }
 
-div.bg-cyan{
-    background-color: cyan;
+.goblet-image {
+  text-align: center;
+  margin-top: 4rem;
+  z-index: 3;
 }
 
-div.bg-pink{
-    background-color: pink;
+.goblet-image img {
+  max-width: 180px;
+  height: auto;
+  opacity: 0.85;
 }
 
-div.bg-grey{
-    background-color: grey;
+.video-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 320px;
+  height: 180px;
+  z-index: 10;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .video-container {
+    width: 220px;
+    height: 124px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
 }
