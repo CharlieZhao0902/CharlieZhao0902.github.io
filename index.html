@@ -4,15 +4,25 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Crystal Goblet</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 </head>
 <body>
-  <div id="particles-js"></div>
-  <svg class="decorative-svg" viewBox="0 0 1440 320"><path fill="#e0d8cf" fill-opacity="1" d="M0,64L48,58.7C96,53,192,43,288,69.3C384,96,480,160,576,192C672,224,768,224,864,208C960,192,1056,160,1152,149.3C1248,139,1344,149,1392,154.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+
+    <div class="welcome visible">
+    <div class="largetext">
+        This site requires audio.<br>Click anywhere to begin.
+    </div>
+</div>
+
+  <div class="herovideo">
+    <video class="video" controls>
+     <source src="video/video480.mp4" type="video/mp4">
+   </video>
+  </div>
+
+  <div class="folio">
+    The Crystal Goblet should be invisible
+  </div>
 
   <div class="content">
     <h1>The Crystal Goblet</h1>
@@ -24,16 +34,16 @@
   <p style="animation-delay: 0s">
     Imagine that you have before you a flagon of wine. You may choose your own favourite vintage for this imaginary demonstration, so that it be a deep shimmering crimson in colour.
   </p>
-  <p style="animation-delay: 16.55s">
+  <p style="animation-delay: 10s">
     You have two goblets before you. One is of solid gold, wrought in the most exquisite patterns. The other is of crystal-clear glass, thin as a bubble, and as transparent. Pour and drink; and according to your choice of goblet, I shall know whether or not you are a connoisseur of wine.
   </p>
-  <p style="animation-delay: 33.1s">
+  <p style="animation-delay: 30s">
     For if you have no feelings about wine one way or the other, you will want the sensation of drinking the stuff out of a vessel that may have cost thousands of pounds; but if you are a member of that vanishing tribe, the amateurs of fine vintages, you will choose the crystal, because everything about it is calculated to reveal rather than hide the beautiful thing which it was meant to contain.
   </p>
-  <p style="animation-delay: 49.65s">
+  <p style="animation-delay: 53s">
     Bear with me in this long-winded and fragrant metaphor; for you will find that almost all the virtues of the perfect wine-glass have a parallel in typography. There is the long, thin stem that obviates fingerprints on the bowl. Why? Because no cloud must come between your eyes and the fiery heart of the liquid. Are not the margins on book pages similarly meant to obviate the necessity of fingering the type-page?
   </p>
-  <p style="animation-delay: 66.2s">
+  <p style="animation-delay: 75s">
     There are a thousand mannerisms in typography that are as impudent and arbitrary as putting port in tumblers of red or green glass! There are ways of setting lines of type which may work well enough, and yet keep the reader subconsciously worried by the fear of 'doubling' lines, reading three words as one, and so forth.
   </p>
   <p style="animation-delay: 82.75s">
@@ -116,21 +126,8 @@
   </p>
 </div>
 
-    </div>
 
-    <div class="goblet-image">
-      <img src="https://cdn.pixabay.com/photo/2016/11/29/10/07/transparent-1867287_1280.png" alt="Crystal goblet illustration">
-    </div>
-  </div>
-
-  <div class="video-container">
-    <iframe src="https://player.vimeo.com/video/1086465306?autoplay=1&muted=0" 
-            frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
-    </iframe>
-  </div>
-
-  <script>
-    particlesJS.load('particles-js', 'https://cdn.jsdelivr.net/gh/VincentGarreau/particles.js/particles.json');
-  </script>
+<script src="class-changes.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
